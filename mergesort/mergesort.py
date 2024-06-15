@@ -23,8 +23,7 @@ def merge(left_half, right_half):
 def merge_sort(arr):
     '''
         Time:
-            average O(n log n)
-            worst O(n log n)
+            best/average/worst O(n log n)
         Space:
             O(n)
     '''

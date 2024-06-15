@@ -5,7 +5,7 @@ def quicksort(arr):
     '''
         Time:
             average O(n log n)
-            worst O(n^2)
+            worst O(n^2) if it's not the most optmized pivot
         Space:
             O(log n)
     '''
