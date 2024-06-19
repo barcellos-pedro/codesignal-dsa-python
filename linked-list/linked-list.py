@@ -65,15 +65,32 @@ class LinkedList:
             node = stack.pop()
             print(node, end=" => " if stack else "\n")
 
+    def length(self):
+        total = 0
+        node = self.head
+
+        while node:
+            total += 1
+            node = node.next
+
+        return total
+
 
 my_list = LinkedList()
+
+print(f"Length {my_list.length()}")
+
 my_list.insert('Task A')
 my_list.insert('Task B')
 my_list.insert('Task C')
 
+print(f"Length {my_list.length()}")
+
 my_list.print()
 my_list.delete('Task C')
 my_list.print()
+
+print(f"Length {my_list.length()}")
 
 print("Reverse traversal")
 my_list.print(reverse=True)
