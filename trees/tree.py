@@ -15,8 +15,6 @@ class Node:
 
 
 def traverse_tree(node):
-    if node is None:
-        return
     print(node.value, end=' -> ')
     for child in node.children:
         traverse_tree(child)
